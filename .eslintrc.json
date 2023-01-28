@@ -45,6 +45,7 @@
           "/^pages/",
           "/utils/",
           "/^store/",
+          "/^context/",
           "/^styles/",
           "/^templates/",
           ["parent", "sibling", "index"]
