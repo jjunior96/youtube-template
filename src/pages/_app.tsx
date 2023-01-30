@@ -8,8 +8,6 @@ import { AppProvider } from 'context';
 import { GlobalStyles, theme } from 'styles';
 
 function App({ Component, pageProps }: AppProps) {
-  console.log('app.tsx');
-
   return (
     <ThemeProvider theme={theme}>
       <Head>
