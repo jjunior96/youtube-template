@@ -3,6 +3,9 @@ import Head from 'next/head';
 
 import { ThemeProvider } from 'styled-components';
 
+import ErrorBoundary from 'components/ErrorBoundary';
+import ErrorFallback from 'components/ErrorFallback';
+
 import { AppProvider } from 'context';
 
 import { GlobalStyles, theme } from 'styles';
@@ -19,7 +22,9 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <AppProvider>
-        <Component {...pageProps} />
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <Component {...pageProps} />
+        </ErrorBoundary>
       </AppProvider>
 
       <GlobalStyles />
