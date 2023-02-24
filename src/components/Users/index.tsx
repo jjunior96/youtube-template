@@ -1,6 +1,6 @@
 import { Card } from 'components/Card';
 
-import { useUsersStore } from 'store/users';
+// import { useUsersStore } from 'store/users';
 
 import { useUser } from 'context/users';
 

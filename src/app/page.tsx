@@ -1,7 +1,7 @@
 'use client';
 
-import Link from 'next/link';
-import { useForm } from 'react-hook-form';
+// import Link from 'next/link';
+// import { useForm } from 'react-hook-form';
 
 // import { useEffect } from 'react';
 
@@ -14,13 +14,13 @@ export default function HomePage() {
   // handleError();
   // }, []);
 
-  const { handleSubmit, register } = useForm();
+  // const { handleSubmit, register } = useForm();
 
-  const handleFormData = (data: any) => {
-    console.log(data);
+  // const handleFormData = (data: any) => {
+  //   console.log(data);
 
-    alert(JSON.stringify(data, null, 2));
-  };
+  //   alert(JSON.stringify(data, null, 2));
+  // };
 
   return (
     <>

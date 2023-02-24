@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
-    appDir: true
+    appDir: true,
+    typedRoutes: true,
+    serverComponentsExternalPackages: ['jest']
   },
   compiler: {
     styledComponents: true

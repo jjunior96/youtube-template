@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src",
+    "target": "es2015",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,12 +19,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "src",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
     "plugins": [
       {
         "name": "next"
@@ -34,10 +29,13 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "**/**/*.ts",
+    "**/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
-    "cypress"
+    "cypress",
+    "./cypress.config.ts"
   ]
 }

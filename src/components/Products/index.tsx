@@ -1,6 +1,6 @@
 import { Card } from 'components/Card';
 
-import { useProductsStore } from 'store/products';
+// import { useProductsStore } from 'store/products';
 
 import { useProduct } from 'context/products';
 

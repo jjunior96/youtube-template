@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
   return (
     <S.Container isOpen={isOpen}>
       <S.ButtonContainer>
-        <button onClick={toggle}>
+        <button onClick={toggle} data-testid="toggle-layout">
           {isOpen ? <CaretRight /> : <CaretLeft />}
         </button>
       </S.ButtonContainer>
@@ -34,21 +34,24 @@ const Sidebar = ({ isOpen, toggle }: SidebarProps) => {
         </li>
 
         <li>
-          <ActiveLink href="#">
+          <ActiveLink href="/products">
             <Package /> <span>Pedidos</span>
           </ActiveLink>
         </li>
+
         <li>
-          <ActiveLink href="/about">
+          <ActiveLink href="/users">
             <Users /> <span>Usuários</span>
           </ActiveLink>
         </li>
+
         <li>
           <ActiveLink href="#">
             <Clock />
             <span>Agendamentos</span>
           </ActiveLink>
         </li>
+
         <li>
           <ActiveLink href="#">
             <Gear /> <span>Configurações</span>

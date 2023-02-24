@@ -10,6 +10,8 @@ export default async function UsersPage() {
     method: 'GET'
   });
 
+  console.log(data);
+
   return (
     <>
       <h2>Users</h2>

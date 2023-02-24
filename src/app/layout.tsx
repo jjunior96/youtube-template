@@ -1,7 +1,5 @@
 'use client';
 
-import NextNProgress from 'nextjs-progressbar';
-
 import { Layout } from 'components/Layout';
 
 import { AppProvider } from 'context';

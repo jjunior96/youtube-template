@@ -1,0 +1,1 @@
+export { fetchWrapper } from './fetch';
