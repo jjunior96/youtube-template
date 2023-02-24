@@ -1,5 +1,7 @@
 'use client';
 
+import NextNProgress from 'nextjs-progressbar';
+
 import { Layout } from 'components/Layout';
 
 import { AppProvider } from 'context';
@@ -15,11 +17,17 @@ export default function RootLayout({
     <html>
       <head />
 
-      <AppProvider>
-        <body className={styles.body}>
+      <body className={styles.body}>
+        <AppProvider>
+          {/* <NextNProgress
+            color="#719c1"
+            startPosition={0.3}
+            stopDelayMs={200}
+            height={3}
+          /> */}
           <Layout>{children}</Layout>
-        </body>
-      </AppProvider>
+        </AppProvider>
+      </body>
     </html>
   );
 }
