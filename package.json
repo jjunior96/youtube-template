@@ -24,7 +24,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix"]
+      "yarn lint --fix"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.11",
