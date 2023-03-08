@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "target": "es2015",
+    "baseUrl": "./",
+    "paths": {
+      "src/*": ["src/*"],
+      "tests/*": ["__tests__/*"]
+    },
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",

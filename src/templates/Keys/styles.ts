@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { theme } from 'styles';
+import { theme } from 'src/styles';
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   button {
     border: none;
     background-color: #6b21a8;
-    color: ${theme.colors.white};
+    color: ${theme.colors.neutral_100};
     padding: 0.8rem 1.6rem;
     width: 20rem;
     border-radius: 8px;

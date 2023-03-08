@@ -3,12 +3,16 @@ import Head from 'next/head';
 
 import { ThemeProvider } from 'styled-components';
 
-import ErrorBoundary from 'components/ErrorBoundary';
-import ErrorFallback from 'components/ErrorFallback';
+import ErrorBoundary from 'src/components/ErrorBoundary';
+import ErrorFallback from 'src/components/ErrorFallback';
 
-import { AppProvider } from 'context';
+import { AppProvider } from 'src/context';
 
-import { GlobalStyles, theme } from 'styles';
+import { GlobalStyles, theme } from 'src/styles';
+
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+  await import('../mocks');
+}
 
 function App({ Component, pageProps }: AppProps) {
   return (

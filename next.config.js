@@ -6,6 +6,10 @@ const nextConfig = {
     typedRoutes: true,
     serverComponentsExternalPackages: ['jest']
   },
+  webpack: (config) => {
+    config.experiments.topLevelAwait = true;
+    return config;
+  },
   compiler: {
     styledComponents: true
   }
